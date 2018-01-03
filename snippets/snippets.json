@@ -31,15 +31,6 @@
       "}"
     ]
   },
-  "nestjs-dto": {
-    "prefix": "nsjs-dto",
-    "description": "NestJS Data Transfer Object",
-    "body": [
-      "export class ${1:TM_FILENAME_BASE} {",
-      "\treadonly ${2:name}: string;",
-      "}"
-    ]
-  },
   "nestjs-service": {
     "prefix": "nsjs-mon-ser",
     "description": "NestJS Service",
@@ -55,6 +46,39 @@
       "",
       "\tasync create(${4}) {",
       "\t\t${0}",
+      "\t}",
+      "}"
+    ]
+  },
+  "nestjs-controller": {
+    "prefix": "nsjs-con",
+    "description": "NestJS Controller",
+    "body": [
+      "import { Controller, Get } from '@nestjs/common';",
+      "",
+      "@Controller(${1})",
+      "export class ${2}Controller {",
+      "\tconstructor(){}",
+      "",
+      "\t@Get() {",
+      "\t\t${0}",
+      "\t}",
+      "}"
+    ]
+  },
+  "nestjs-middleware": {
+    "prefix": "nestjs-mid",
+    "description": "NestJS Middleware",
+    "body": [
+      "import { Middleware, NestMiddleware, ExpressMiddleware } from '@nestjs/common';",
+      "",
+      "@Middleware()",
+      "export class ${1}Middleware implements NestMiddleware {",
+      "\tresolve(...args: any[]): ExpressMiddleware {",
+      "\t\treturn (req, res, next) => {",
+      "\t\t\t${0}",
+      "\t\t\tnext();",
+      "\t\t};",
       "\t}",
       "}"
     ]
