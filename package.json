@@ -1,0 +1,21 @@
+{
+    "name": "nestjs",
+    "displayName": "nextjs-snippets",
+    "description": "Code snippets for nestjs",
+    "version": "0.0.1",
+    "publisher": "ashinzekene",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "Angular Resolver": {
+    "prefix": "a-resolver",
+    "description": "Angular Resolver",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Observable } from 'rxjs/Observable';",
+      "//import { ${1:Name}Service } from './${TM_FILENAME_BASE/resolver/$1/}service';",
+      "import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';",
+      "",
+      "//Resolvers have to fetch for some data hence the service",
+      "",
+      "@Injectable()",
+      "export class ${1:Name}Resolver implements Resolve<any> {",
+      "\tconstructor(private ${2:name}Service: ${1:Name}Service, private router: Router) {}",
+      "",
+      "\tresolve(route: ActivatedRouteSnapshot): Observable<any>|Promise<any>|any {",
+      "\t\treturn this.${2:name}Service.get()",
+      "\t}",
+      "}"
+    ]
+  },
+  "nestjs-mongoose-interface": {
+    "prefix": "nsjs-mon-int",
+    "description": "NestJS Interface for mongoose",
+    "body": [
+      "import { Document } from 'mongoose';",
+      "",
+      "export interface ${TM_FILENAME_BASE} extends Document {",
+      "\treadonly ${2:name}: string;",
+      "}"
+    ]
+  },
+  "nestjs-dto": {
+    "prefix": "nsjs-dto",
+    "description": "NestJS Data Transfer Object",
+    "body": [
+      "export class ${1:TM_FILENAME_BASE} {",
+      "\treadonly ${2:name}: string;",
+      "}"
+    ]
+  },
+  "nestjs-service": {
+    "prefix": "nsjs-mon-ser",
+    "description": "NestJS Service",
+    "body": [
+      "import { Model } from 'mongoose';",
+      "import { Component, Inject } from '@nestjs/common';",
+      "import { InjectModel } from '@nestjs/mongoose';",
+      "import { ${1:User}Schema } from '${2:./schemas/user.schema}';",
+      "",
+      "@Component()",
+      "export class ${1: User}Service {",
+      "\tconstructor(@InjectModel(${1:User}Schema) private readonly ${3}) {}",
+      "",
+      "\tasync create(${4}) {",
+      "\t\t${0}",
+      "\t}",
+      "}"
+    ]
+  }
+}
