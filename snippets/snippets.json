@@ -1,34 +1,4 @@
 {
-  "nestjs-mongoose-interface": {
-    "prefix": "nsjs-mon-int",
-    "description": "NestJS Interface for mongoose",
-    "body": [
-      "import { Document } from 'mongoose';",
-      "",
-      "export interface ${TM_FILENAME_BASE} extends Document {",
-      "\treadonly ${2:name}: string;",
-      "}"
-    ]
-  },
-  "nestjs-service": {
-    "prefix": "nsjs-mon-ser",
-    "description": "NestJS Service",
-    "body": [
-      "import { Model } from 'mongoose';",
-      "import { Component, Inject } from '@nestjs/common';",
-      "import { InjectModel } from '@nestjs/mongoose';",
-      "import { ${1:User}Schema } from '${2:./schemas/user}.schema';",
-      "",
-      "@Component()",
-      "export class ${1: User}Service {",
-      "\tconstructor(@InjectModel(${1:User}Schema) private readonly ${3}) {}",
-      "",
-      "\tasync create(${4}) {",
-      "\t\tthis.${3}.create${0}",
-      "\t}",
-      "}"
-    ]
-  },
   "nestjs-controller": {
     "prefix": "nsjs-con",
     "description": "NestJS Controller",
@@ -104,6 +74,38 @@
       "\tconfigure() {",
       "\t\t${0}",
       "\t}",
+      "}"
+    ]
+  },
+  "nestjs-mongoose-service": {
+    "prefix": "nsjs-ser-mon",
+    "description": "NestJS Service for Mongoose",
+    "body": [
+      "import { Model } from 'mongoose';",
+      "import { Component, Inject } from '@nestjs/common';",
+      "import { InjectModel } from '@nestjs/mongoose';",
+      "",
+      "import { Create${1:User}Dto } from './dto/create-${2:user}.dto';",
+      "import { ${1:User} } from './interfaces/${2:user}s.interface';",
+      "import { ${1:User}Schema } from './schemas/${2:user}s.schema';",
+      "",
+      "@Component()",
+      "export class UsersService {",
+      "\tconstructor(@InjectModel(${1:User}Schema) private readonly ${2:user}Model: Model<${1:User}>) {}",
+      "\tasync findAll () {",
+      "\t\treturn await this.${2:user}Model.find().exec()",
+      "\t}",
+      "}"
+    ]
+  },
+  "nestjs-mongoose-interface": {
+    "prefix": "nsjs-mon-int",
+    "description": "NestJS Interface for mongoose",
+    "body": [
+      "import { Document } from 'mongoose';",
+      "",
+      "export interface ${1:User} extends Document {",
+      "\treadonly ${2:name}: string;",
       "}"
     ]
   }
