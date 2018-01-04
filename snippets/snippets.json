@@ -1,25 +1,4 @@
 {
-  "Angular Resolver": {
-    "prefix": "a-resolver",
-    "description": "Angular Resolver",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { Observable } from 'rxjs/Observable';",
-      "//import { ${1:Name}Service } from './${TM_FILENAME_BASE/resolver/$1/}service';",
-      "import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';",
-      "",
-      "//Resolvers have to fetch for some data hence the service",
-      "",
-      "@Injectable()",
-      "export class ${1:Name}Resolver implements Resolve<any> {",
-      "\tconstructor(private ${2:name}Service: ${1:Name}Service, private router: Router) {}",
-      "",
-      "\tresolve(route: ActivatedRouteSnapshot): Observable<any>|Promise<any>|any {",
-      "\t\treturn this.${2:name}Service.get()",
-      "\t}",
-      "}"
-    ]
-  },
   "nestjs-mongoose-interface": {
     "prefix": "nsjs-mon-int",
     "description": "NestJS Interface for mongoose",
@@ -38,14 +17,14 @@
       "import { Model } from 'mongoose';",
       "import { Component, Inject } from '@nestjs/common';",
       "import { InjectModel } from '@nestjs/mongoose';",
-      "import { ${1:User}Schema } from '${2:./schemas/user.schema}';",
+      "import { ${1:User}Schema } from '${2:./schemas/user}.schema';",
       "",
       "@Component()",
       "export class ${1: User}Service {",
       "\tconstructor(@InjectModel(${1:User}Schema) private readonly ${3}) {}",
       "",
       "\tasync create(${4}) {",
-      "\t\t${0}",
+      "\t\tthis.${3}.create${0}",
       "\t}",
       "}"
     ]
@@ -67,7 +46,7 @@
     ]
   },
   "nestjs-middleware": {
-    "prefix": "nestjs-mid",
+    "prefix": "nsjs-mid",
     "description": "NestJS Middleware",
     "body": [
       "import { Middleware, NestMiddleware, ExpressMiddleware } from '@nestjs/common';",
@@ -79,6 +58,51 @@
       "\t\t\t${0}",
       "\t\t\tnext();",
       "\t\t};",
+      "\t}",
+      "}"
+    ]
+  },
+  "nestjs-module": {
+    "prefix": "nsjs-mod",
+    "description": "NestJS Module",
+    "body": [
+      "import { Module } from '@nestjs/common';",
+      "import { ${1:Users}Controller } from './${2:users}.controller';",
+      "import { ${1:Users}Service } from './${2:users}.service';",
+      "",
+      "@Module({",
+      "\tcontrollers: [${1:Users}Controller],",
+      "\tcomponents:[${1:Users}Service],",
+      "})",
+      "export class ${1:Users}Module {${0}};"
+    ]
+  },
+  "nestjs-module-root": {
+    "prefix": "nsjs-mod-root",
+    "description": "NestJS Root Module",
+    "body": [
+      "import { Module } from '@nestjs/common';",
+      "import { ${1:Users}Module } from './${2}.module';",
+      "",
+      "@Module({",
+      "\tmodules: [${1:Users}Module],",
+      "})",
+      "export class ${3:Application}Module {${0}};"
+    ]
+  },
+  "nestjs-module-nest": {
+    "prefix": "nsjs-mod-nest",
+    "description": "NestJS Module Implementing NestModule",
+    "body": [
+      "import { Module, NestModule } from '@nestjs/common';",
+      "import { ${1:Users}Module } from './${2:users}.module';",
+      "",
+      "@Module({",
+      "\tmodules: [${1:Users}Module],",
+      "})",
+      "export class ${3:Application}Module {",
+      "\tconfigure() {",
+      "\t\t${0}",
       "\t}",
       "}"
     ]
