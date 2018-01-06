@@ -1,8 +1,16 @@
 ### vscode-nestjs-snippets
 
-# NESTJS SNIPPETS FOR VSCODE
 
-This extension adds snippets for working with nestjs in Vscode 
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestjst)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestsjs)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestsjs)
+
+<img src="nestjs.jpg" style="margin: auto; display: block;" alt="NESTJS" height="100px" width="100px">
+
+<h1 style="text-align: center;">NESTJS SNIPPETS FOR VSCODE</h1>
+
+<p style="text-align: center;">This extension adds snippets for working with nestjs in Vscode</p>
 
 ## Screenshot
 
