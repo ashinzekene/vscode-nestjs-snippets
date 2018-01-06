@@ -37,5 +37,5 @@ Contributions are highly welcome
 
 ## Release Notes
 
-### 0.1.0
+### 0.0.1
 Pre release of vscode-nestsjs-snippets
