@@ -1,65 +1,41 @@
-# nestjs README
+### vscode-nestjs-snippets
 
-This is the README for your extension "nestjs". After writing up a brief description, we recommend including the following sections.
+# NESTJS SNIPPETS FOR VSCODE
 
-## Features
+This extension adds snippets for working with nestjs in Vscode 
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Screenshot
 
-For example if there is an image subfolder under your extension project workspace:
+![Usage](img.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+| Snippet                      | Purpose                                   |
+|------------------------------|--------------------------------------     |
+| `nsjs-con`                   | NestJS Controller                         |
+| `nsjs-mid`                   | NestJS Middleware                         |
+| `nsjs-mod`                   | NestJS Module                             |
+| `nsjs-mod-root`              | NestJS Root Module                        |
+| `nsjs-mod-nest`              | NestJS Module Implementing NestModule     |
+| `nsjs-ser-mon`               | NestJS Service for Mongoose               |
+| `nsjs-mon-int`               | NestJS Interface for mongoose             |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Install Visual Studio Code 1.10.0 or higher
+1. Launch Code
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Select `Install Extension`
+1. Choose the extension
+1. Reload Visual Studio Code
 
-For example:
+## Contributing
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Contributions are highly welcome
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### 0.1.0
+Pre release of vscode-nestsjs-snippets
