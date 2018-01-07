@@ -2,11 +2,11 @@
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestjst)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestsjs)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestsjs)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestjs)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestjs)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/ashinzekene.nestjs.svg)](https://marketplace.visualstudio.com/items?itemName=ashinzekene.nestjs)
 
-<img src="nestjs.jpg" style="margin: auto; display: block;" alt="NESTJS" height="100px" width="100px">
+![NESTJS](nestjs.jpg)
 
 <h1 style="text-align: center;">NESTJS SNIPPETS FOR VSCODE</h1>
 
@@ -45,5 +45,5 @@ Contributions are highly welcome
 
 ## Release Notes
 
-### 0.0.1
-Pre release of vscode-nestsjs-snippets
+### 0.0.2
+Pre release of vscode-nestjs-snippets
