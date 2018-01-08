@@ -28,6 +28,7 @@
 | `nsjs-mod-nest`              | NestJS Module Implementing NestModule     |
 | `nsjs-ser-mon`               | NestJS Service for Mongoose               |
 | `nsjs-mon-int`               | NestJS Interface for mongoose             |
+| `nsjs-unit-test`             | NestJS Unit Test                          |
 
 
 ## Installation
