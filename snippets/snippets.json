@@ -108,5 +108,38 @@
       "\treadonly ${2:name}: string;",
       "}"
     ]
+  },
+  "nestjs-unit-test": {
+    "prefix": "nsjs-test",
+    "description": "NestJS Interface for mongoose",
+    "body": [
+      "import { Test } from '@nestjs/testing';",
+      "import { ${1:Users}Controller } from './${2:users}.controller';",
+      "import { ${1:Users}Service } from './${2:users}.service';",
+      "",
+      "describe('${1:Users}Controller', () => {",
+      "\tlet ${2:users}Controller: ${1:Users}Controller;",
+      "\tlet ${2:users}Service: ${1:Users}Service;",
+      "",
+      "\tbeforeEach(async () => {",
+      "\t\tconst module = await Test.createTestingModule({",
+      "\t\t\tcontrollers: [${1:Users}Controller],",
+      "\t\t\tcomponents: [${1:Users}Service],",
+      "\t\t}).compile();",
+      "",
+      "\t\t${2:users}Service = module.get<${1:Users}Service>(${1:Users}Service);",
+      "\t\t${2:users}Controller = module.get<${1:Users}Controller>(${1:Users}Controller);",
+      "\t});",
+      "",
+      "\tdescribe('findAll', () => {",
+      "\t\tit('should return an array of users', async () => {",
+      "\t\t\tconst result = ['test'];",
+      "\t\t\tjest.spyOn(${2:users}Service, 'findAll').mockImplementation(() => result);",
+      "\t\t\t${0}",
+      "\t\t\texpect(await ${2:users}Controller.findAll()).toBe(result);",
+      "\t\t});",
+      "\t});",
+      "});"
+    ]
   }
 }
