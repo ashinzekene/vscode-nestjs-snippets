@@ -110,8 +110,8 @@
     ]
   },
   "nestjs-unit-test": {
-    "prefix": "nsjs-test",
-    "description": "NestJS Interface for mongoose",
+    "prefix": "nsjs-unit-test",
+    "description": "NestJS Unit Test",
     "body": [
       "import { Test } from '@nestjs/testing';",
       "import { ${1:Users}Controller } from './${2:users}.controller';",
