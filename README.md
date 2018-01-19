@@ -48,5 +48,5 @@ Contributions are highly welcome
 
 ## Release Notes
 
-### 0.0.2
-Pre release of vscode-nestjs-snippets
+### 0.0.6
+Added Sequelize support
