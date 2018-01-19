@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="./nestjs.jpg" alt="NESTJS" />
+  <img src="https://github.com/ashinzekene/vscode-nestjs-snippets/blob/master/nestjs.jpg?raw=true" alt="NESTJS" />
   <h1 align="center">NESTJS SNIPPETS FOR VSCODE</h1>
   <p align="center">This extension adds snippets for working with nestjs in Vscode</p>
 </p>
