@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/ashinzekene/vscode-nestjs-snippets/blob/master/nestjs.jpg" alt="NESTJS" />
+  <img src="./nestjs.jpg" alt="NESTJS" />
   <h1 align="center">NESTJS SNIPPETS FOR VSCODE</h1>
   <p align="center">This extension adds snippets for working with nestjs in Vscode</p>
 </p>
@@ -31,6 +31,9 @@
 | `nsjs-ser-mon`               | NestJS Service for Mongoose               |
 | `nsjs-mon-int`               | NestJS Interface for mongoose             |
 | `nsjs-unit-test`             | NestJS Unit Test                          |
+| `nsjs-seq-ent`               | NestJS Sequelize Entity                   |
+| `nsjs-seq-pro`               | NestJS Sequelize Provider                 |
+| `nsjs-seq-db-pro`            | NestJS Sequelize Database Provider        |
 
 
 ## Installation
@@ -42,11 +45,16 @@
 1. Choose the extension
 1. Reload Visual Studio Code
 
+OR
+
+1. Type `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Type `ext install ashinzekene.nestjs`
+
 ## Contributing
 
 Contributions are highly welcome
 
 ## Release Notes
 
-### 0.0.6
-Added Sequelize support
+### 0.0.7
+Edited Readme to show new snippets

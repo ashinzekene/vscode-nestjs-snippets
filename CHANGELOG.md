@@ -4,6 +4,10 @@ All notable changes to the "nestjs" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+<a name="0.0.5"></a>
+## 0.0.7
+
+* Edited Readme to show new snippets
 
 <a name="0.0.5"></a>
 ## 0.0.5 (2018-01-19)
