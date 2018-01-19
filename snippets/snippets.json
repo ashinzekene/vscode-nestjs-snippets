@@ -141,5 +141,62 @@
       "\t});",
       "});"
     ]
+  },
+  "nestjs-seq-entity": {
+    "prefix": "nsjs-seq-ent",
+    "description": "NestJS Sequelize Entity",
+    "body": [
+      "import { Table, Column, Model } from 'sequelize-typescript';",
+      "",
+      "@Table",
+      "export class ${1:Cat} extends Model<${1:Cat}> {",
+      "\t@Column",
+      "\tname: string;",
+      "",
+      "\t@Column",
+      "\t${0};",
+      "}"
+    ]
+  },
+  "nestjs-seq-provider": {
+    "prefix": "nsjs-seq-pro",
+    "description": "NestJS Sequelize Provider",
+    "body": [
+      "import { ${1} } from './${2}.entity';",
+      "",
+      "export const ${2}Providers = [",
+      "\t{",
+      "\t\tprovide: '${1}Repository',",
+      "\t\tuseValue: ${1},",
+      "\t},",
+      "];"
+    ]
+  },
+  "nestjs-seq-db-provider": {
+    "prefix": "nsjs-seq-db-pro",
+    "description": "NestJS Sequelize Provider",
+    "body": [
+      "import { Sequelize } from 'sequelize-typescript';",
+      "import { ${1} } from '../${2}s/${2}.entity';",
+      "",
+      "export const databaseProviders = [",
+      "\t{",
+      "\t\tprovide: 'SequelizeToken',",
+      "\t\tuseFactory: async () => {",
+      "\t\t\tconst sequelize = new Sequelize({",
+      "\t\t\t\tdialect: '${3:mysql}',",
+      "\t\t\t\thost: '${4:localhost}',",
+      "\t\t\t\tport: ${5:3306},",
+      "\t\t\t\tusername: '${6:root}',",
+      "\t\t\t\tpassword: '${7}',",
+      "\t\t\t\tdatabase: '${0}',",
+      "\t\t\t});",
+      "\t\t\tsequelize.addModels([${1}]);",
+      "\t\t\tawait sequelize.sync();",
+      "\t\t\treturn sequelize;",
+      "\t\t},",
+      "\t},",
+      "];"
+    ]
   }
 }
