@@ -4,7 +4,12 @@ All notable changes to the "nestjs" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
-<a name="0.0.5"></a>
+<a name="UPCOMING"></a>
+## UPCOMING
+
+* Added snippe for interceptors
+
+<a name="0.0.7"></a>
 ## 0.0.7
 
 * Edited Readme to show new snippets
