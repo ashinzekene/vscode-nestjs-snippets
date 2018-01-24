@@ -7,7 +7,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 <a name="UPCOMING"></a>
 ## UPCOMING
 
-* Added snippe for interceptors
+* Added snippet for interceptors
+* Added snippet for guards
 
 <a name="0.0.7"></a>
 ## 0.0.7
