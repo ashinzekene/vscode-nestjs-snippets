@@ -6,9 +6,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 <a name="UPCOMING"></a>
 ## UPCOMING
-
 * Added snippet for interceptors
 * Added snippet for guards
+* Added for v5 syntax such as `providers`, `modules`, `middleware`
+* Changed old conflicting snippets by appending `v4` 
+
 
 <a name="0.0.7"></a>
 ## 0.0.7

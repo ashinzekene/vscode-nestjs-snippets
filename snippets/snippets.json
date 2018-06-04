@@ -15,9 +15,9 @@
       "}"
     ]
   },
-  "nestjs-middleware": {
-    "prefix": "nsjs-mid",
-    "description": "NestJS Middleware",
+  "nestjs-middleware-v4": {
+    "prefix": "nsjs-mid-v4",
+    "description": "NestJS Middleware Version 4",
     "body": [
       "import { Middleware, NestMiddleware, ExpressMiddleware } from '@nestjs/common';",
       "",
@@ -272,6 +272,23 @@
       "\tproviders: [],",
       "})",
       "export class ${1}Module {${0}};"
+    ]
+  },
+  "nestjs-middleware": {
+    "prefix": "nsjs-mid",
+    "description": "NestJS Middleware",
+    "body": [
+      "import { Middleware, NestMiddleware, MiddlewareFunction } from '@nestjs/common';",
+      "",
+      "@Middleware()",
+      "export class ${1}Middleware implements NestMiddleware {",
+      "\tresolve(...args: any[]): MiddlewareFunction {",
+      "\t\treturn (req, res, next) => {",
+      "\t\t\t${0}",
+      "\t\t\tnext();",
+      "\t\t};",
+      "\t}",
+      "}"
     ]
   }
 }
