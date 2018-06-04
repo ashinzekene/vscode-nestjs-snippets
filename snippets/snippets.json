@@ -5,7 +5,7 @@
     "body": [
       "import { Controller, Get } from '@nestjs/common';",
       "",
-      "@Controller(${1})",
+      "@Controller('${1}')",
       "export class ${2}Controller {",
       "\tconstructor(){}",
       "",
