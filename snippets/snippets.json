@@ -32,19 +32,19 @@
       "}"
     ]
   },
-  "nestjs-module": {
-    "prefix": "nsjs-mod",
-    "description": "NestJS Module",
+  "nestjs-module-v4": {
+    "prefix": "nsjs-mod-v4",
+    "description": "NestJS Module v4",
     "body": [
       "import { Module } from '@nestjs/common';",
-      "import { ${1:Users}Controller } from './${2:users}.controller';",
-      "import { ${1:Users}Service } from './${2:users}.service';",
+      "import { ${1}Controller } from './${2}.controller';",
+      "import { ${1}Service } from './${2}.service';",
       "",
       "@Module({",
-      "\tcontrollers: [${1:Users}Controller],",
-      "\tcomponents:[${1:Users}Service],",
+      "\tcontrollers: [${1}Controller],",
+      "\tcomponents:[${1}Service],",
       "})",
-      "export class ${1:Users}Module {${0}};"
+      "export class ${1}Module {${0}};"
     ]
   },
   "nestjs-module-root": {
@@ -52,10 +52,10 @@
     "description": "NestJS Root Module",
     "body": [
       "import { Module } from '@nestjs/common';",
-      "import { ${1:Users}Module } from './${2}.module';",
+      "import { ${1}Module } from './${2}.module';",
       "",
       "@Module({",
-      "\tmodules: [${1:Users}Module],",
+      "\tmodules: [${1}Module],",
       "})",
       "export class ${3:Application}Module {${0}};"
     ]
@@ -65,10 +65,10 @@
     "description": "NestJS Module Implementing NestModule",
     "body": [
       "import { Module, NestModule } from '@nestjs/common';",
-      "import { ${1:Users}Module } from './${2:users}.module';",
+      "import { ${1}Module } from './${2}.module';",
       "",
       "@Module({",
-      "\tmodules: [${1:Users}Module],",
+      "\tmodules: [${1}Module],",
       "})",
       "export class ${3:Application}Module {",
       "\tconfigure() {",
@@ -114,29 +114,29 @@
     "description": "NestJS Unit Test",
     "body": [
       "import { Test } from '@nestjs/testing';",
-      "import { ${1:Users}Controller } from './${2:users}.controller';",
-      "import { ${1:Users}Service } from './${2:users}.service';",
+      "import { ${1}Controller } from './${2}.controller';",
+      "import { ${1}Service } from './${2}.service';",
       "",
-      "describe('${1:Users}Controller', () => {",
-      "\tlet ${2:users}Controller: ${1:Users}Controller;",
-      "\tlet ${2:users}Service: ${1:Users}Service;",
+      "describe('${1}Controller', () => {",
+      "\tlet ${2}Controller: ${1}Controller;",
+      "\tlet ${2}Service: ${1}Service;",
       "",
       "\tbeforeEach(async () => {",
       "\t\tconst module = await Test.createTestingModule({",
-      "\t\t\tcontrollers: [${1:Users}Controller],",
-      "\t\t\tcomponents: [${1:Users}Service],",
+      "\t\t\tcontrollers: [${1}Controller],",
+      "\t\t\tcomponents: [${1}Service],",
       "\t\t}).compile();",
       "",
-      "\t\t${2:users}Service = module.get<${1:Users}Service>(${1:Users}Service);",
-      "\t\t${2:users}Controller = module.get<${1:Users}Controller>(${1:Users}Controller);",
+      "\t\t${2}Service = module.get<${1}Service>(${1}Service);",
+      "\t\t${2}Controller = module.get<${1}Controller>(${1}Controller);",
       "\t});",
       "",
       "\tdescribe('findAll', () => {",
       "\t\tit('should return an array of users', async () => {",
       "\t\t\tconst result = ['test'];",
-      "\t\t\tjest.spyOn(${2:users}Service, 'findAll').mockImplementation(() => result);",
+      "\t\t\tjest.spyOn(${2}Service, 'findAll').mockImplementation(() => result);",
       "\t\t\t${0}",
-      "\t\t\texpect(await ${2:users}Controller.findAll()).toBe(result);",
+      "\t\t\texpect(await ${2}Controller.findAll()).toBe(result);",
       "\t\t});",
       "\t});",
       "});"
@@ -149,7 +149,7 @@
       "import { Table, Column, Model } from 'sequelize-typescript';",
       "",
       "@Table",
-      "export class ${1:Cat} extends Model<${1:Cat}> {",
+      "export class ${1} extends Model<${1}> {",
       "\t@Column",
       "\tname: string;",
       "",
@@ -230,6 +230,48 @@
       "\t\t${0}",
       "\t}",
       "}"
+    ]
+  },
+  "nestjs-provider": {
+    "prefix": "nsjs-pro",
+    "description": "NestJS Provider",
+    "body": [
+      "import { Injectable } from '@nestjs/common';",
+      "",
+      "@Injectable()",
+      "export class ${1}Service {",
+      "\tconstructor() {}",
+      "\t${0}",
+      "}"
+    ]
+  },
+  "nestjs-module": {
+    "prefix": "nsjs-mod",
+    "description": "NestJS Module",
+    "body": [
+      "import { Module } from '@nestjs/common';",
+      "import { ${1}Controller } from './${2}.controller';",
+      "",
+      "@Module({",
+      "\tcontrollers: [${1}Controller],",
+      "\tproviders: [],",
+      "})",
+      "export class ${1}Module {${0}};"
+    ]
+  },
+  "nestjs-module-global": {
+    "prefix": "nsjs-mod-glob",
+    "description": "NestJS Global Module",
+    "body": [
+      "import { Module, Global } from '@nestjs/common';",
+      "import { ${1}Controller } from './${2}.controller';",
+      "",
+      "@Global()",
+      "@Module({",
+      "\tcontrollers: [${1}Controller],",
+      "\tproviders: [],",
+      "})",
+      "export class ${1}Module {${0}};"
     ]
   }
 }
