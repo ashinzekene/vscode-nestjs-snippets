@@ -1,6 +1,6 @@
 {
     "name": "nestjs",
-    "displayName": "Vscode Nestjs Snippets",
+    "displayName": "Vscode NestJs Snippets",
     "description": "Code snippets for nestjs",
     "version": "0.3.0",
     "repository": "https://github.com/ashinzekene/vscode-nestsjs-snippets",
