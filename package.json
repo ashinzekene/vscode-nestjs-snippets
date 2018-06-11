@@ -1,30 +1,33 @@
 {
-    "name": "nestjs",
-    "displayName": "Vscode NestJs Snippets",
-    "description": "Code snippets for nestjs",
-    "version": "0.3.1",
-    "repository": "https://github.com/ashinzekene/vscode-nestsjs-snippets",
-    "publisher": "ashinzekene",
-    "engines": {
-        "vscode": "^1.17.0"
-    },
-    "icon": "nestjs.jpg",
-    "categories": [
-        "Snippets"
-    ],
-    "tags": [
-        "nestjs",
-        "typescript",
-        "node",
-        "backend",
-        "snippet"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "typescript",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "nestjs",
+  "displayName": "Vscode NestJs Snippets",
+  "description": "Code snippets for nestjs",
+  "version": "0.3.1",
+  "repository": "https://github.com/ashinzekene/vscode-nestsjs-snippets",
+  "publisher": "ashinzekene",
+  "scripts": {
+    "vscode:prepublish": "node scripts/readme-gen"
+  },
+  "engines": {
+    "vscode": "^1.17.0"
+  },
+  "icon": "nestjs.jpg",
+  "categories": [
+    "Snippets"
+  ],
+  "tags": [
+    "nestjs",
+    "typescript",
+    "node",
+    "backend",
+    "snippet"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
