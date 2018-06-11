@@ -18,6 +18,6 @@ Contributions are highly welcome
 
 ## Release Notes
 
-### 0.0.7
+## 0.3.0
 
-Edited Readme to show new snippets
+- Added snippets for v5!!!
