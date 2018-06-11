@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // GET THE CONTENT OF THE TEMPLATE
+
 const README1 = fs.readFileSync(path.join(__dirname + '/README-TEMPLATE1.md')).toString();
 const README2 = fs.readFileSync(path.join(__dirname + '/README-TEMPLATE2.md')).toString();
 
@@ -13,9 +14,9 @@ const snippets = JSON.parse(snippetsStr);
 
 // CREATE TABLE FOR SNIPPETS
 let TABLE = `Snippet                       |Prefix               | Purpose                                   |`;
-let snippetNameLength = 30;
-let snippetPrefixLength = 20;
-let snippetDescriptionLength = 42;
+const snippetNameLength = 30;
+const snippetPrefixLength = 20;
+const snippetDescriptionLength = 42;
 // CREATE FIRST LINE
 const liner =
   '-'.padEnd(snippetNameLength, '-') +
