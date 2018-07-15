@@ -1,6 +1,6 @@
 {
-  "nestjs-controller": {
-    "prefix": "nsjs-con",
+  "Nest Controller": {
+    "prefix": "n-controller",
     "description": "NestJS Controller",
     "body": [
       "import { Controller, Get } from '@nestjs/common';",
@@ -15,8 +15,8 @@
       "}"
     ]
   },
-  "nestjs-middleware-v4": {
-    "prefix": "nsjs-mid-v4",
+  "Nest v4 Middlware": {
+    "prefix": "n-v4-middleware",
     "description": "NestJS Middleware Version 4",
     "body": [
       "import { Middleware, NestMiddleware, ExpressMiddleware } from '@nestjs/common';",
@@ -32,8 +32,8 @@
       "}"
     ]
   },
-  "nestjs-module-v4": {
-    "prefix": "nsjs-mod-v4",
+  "Nest v4 Module": {
+    "prefix": "n-v4-module",
     "description": "NestJS Module v4",
     "body": [
       "import { Module } from '@nestjs/common';",
@@ -47,8 +47,8 @@
       "export class ${1}Module {${0}};"
     ]
   },
-  "nestjs-module-root": {
-    "prefix": "nsjs-mod-root",
+  "Nest Root Module": {
+    "prefix": "n-module-root",
     "description": "NestJS Root Module",
     "body": [
       "import { Module } from '@nestjs/common';",
@@ -60,8 +60,8 @@
       "export class ${3:Application}Module {${0}};"
     ]
   },
-  "nestjs-module-nest": {
-    "prefix": "nsjs-mod-nest",
+  "Nest NestModule": {
+    "prefix": "n-module-nest",
     "description": "NestJS Module Implementing NestModule",
     "body": [
       "import { Module, NestModule } from '@nestjs/common';",
@@ -77,8 +77,8 @@
       "}"
     ]
   },
-  "nestjs-mongoose-service": {
-    "prefix": "nsjs-ser-mon",
+  "Nest Mongoose Service": {
+    "prefix": "n-mongoose-service",
     "description": "NestJS Service for Mongoose",
     "body": [
       "import { Model } from 'mongoose';",
@@ -98,8 +98,8 @@
       "}"
     ]
   },
-  "nestjs-mongoose-interface": {
-    "prefix": "nsjs-mon-int",
+  "Nest Mongoose Interface": {
+    "prefix": "n-mongoose-interface",
     "description": "NestJS Interface for mongoose",
     "body": [
       "import { Document } from 'mongoose';",
@@ -109,8 +109,8 @@
       "}"
     ]
   },
-  "nestjs-unit-test": {
-    "prefix": "nsjs-unit-test",
+  "Nest Unit Test": {
+    "prefix": "n-test",
     "description": "NestJS Unit Test",
     "body": [
       "import { Test } from '@nestjs/testing';",
@@ -142,8 +142,8 @@
       "});"
     ]
   },
-  "nestjs-seq-entity": {
-    "prefix": "nsjs-seq-ent",
+  "Nest Sequelize Entity": {
+    "prefix": "n-sequelize-entity",
     "description": "NestJS Sequelize Entity",
     "body": [
       "import { Table, Column, Model } from 'sequelize-typescript';",
@@ -158,8 +158,8 @@
       "}"
     ]
   },
-  "nestjs-seq-provider": {
-    "prefix": "nsjs-seq-pro",
+  "Nest Sequelize Provider": {
+    "prefix": "n-sequelize-provider",
     "description": "NestJS Sequelize Provider",
     "body": [
       "import { ${1} } from './${2}.entity';",
@@ -172,8 +172,8 @@
       "];"
     ]
   },
-  "nestjs-seq-db-provider": {
-    "prefix": "nsjs-seq-db-pro",
+  "Nest Sequelize Database Provider": {
+    "prefix": "n-sequelize-database-provider",
     "description": "NestJS Sequelize Provider",
     "body": [
       "import { Sequelize } from 'sequelize-typescript';",
@@ -199,8 +199,8 @@
       "];"
     ]
   },
-  "nestjs-interceptor": {
-    "prefix": "nsjs-int",
+  "Nest Interceptor": {
+    "prefix": "n-interceptor",
     "description": "NestJS Interceptor",
     "body": [
       "import { Interceptor, NestInterceptor, ExecutionContext } from '@nestjs/common';",
@@ -214,8 +214,8 @@
       "}"
     ]
   },
-  "nestjs-guard": {
-    "prefix": "nsjs-guard",
+  "Nest Guard": {
+    "prefix": "n-guard",
     "description": "NestJS Guard",
     "body": [
       "import { Guard, CanActivate, ExecutionContext } from '@nestjs/common';",
@@ -232,8 +232,8 @@
       "}"
     ]
   },
-  "nestjs-provider": {
-    "prefix": "nsjs-pro",
+  "Nest Provider": {
+    "prefix": "n-provider",
     "description": "NestJS Provider",
     "body": [
       "import { Injectable } from '@nestjs/common';",
@@ -245,8 +245,8 @@
       "}"
     ]
   },
-  "nestjs-module": {
-    "prefix": "nsjs-mod",
+  "Nest Module": {
+    "prefix": "n-module",
     "description": "NestJS Module",
     "body": [
       "import { Module } from '@nestjs/common';",
@@ -259,8 +259,8 @@
       "export class ${1}Module {${0}};"
     ]
   },
-  "nestjs-module-global": {
-    "prefix": "nsjs-mod-glob",
+  "Nest Global Module": {
+    "prefix": "n-module-global",
     "description": "NestJS Global Module",
     "body": [
       "import { Module, Global } from '@nestjs/common';",
@@ -274,8 +274,8 @@
       "export class ${1}Module {${0}};"
     ]
   },
-  "nestjs-middleware": {
-    "prefix": "nsjs-mid",
+  "Nest Middleware": {
+    "prefix": "n-middleware",
     "description": "NestJS Middleware",
     "body": [
       "import { Middleware, NestMiddleware, MiddlewareFunction } from '@nestjs/common';",
