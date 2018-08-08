@@ -14,9 +14,9 @@ const snippets = JSON.parse(snippetsStr);
 
 // CREATE TABLE FOR SNIPPETS
 let TABLE = `Snippet                       |Prefix               | Purpose                                   |`;
-const snippetNameLength = 30;
-const snippetPrefixLength = 20;
-const snippetDescriptionLength = 42;
+const snippetNameLength = 40;
+const snippetPrefixLength = 30;
+const snippetDescriptionLength = 62;
 // CREATE FIRST LINE
 const liner =
   '-'.padEnd(snippetNameLength, '-') +
@@ -43,4 +43,4 @@ TABLE += '\n\n';
 
 // WRITE IT IN
 fs.writeFileSync('README.md', README1 + TABLE + README2, 'utf-8');
-console.log('>>>> README ready!!!');
+console.log('>>> Generated Readme!!!');

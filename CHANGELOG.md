@@ -4,6 +4,13 @@ All notable changes to the "nestjs" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+<a name="1.0.0"></a>
+
+## 1.0.0
+
+- New Naming convention
+  - Thanks to @wbhob for the more efficient naming convention
+
 <a name="0.3.0"></a>
 
 ## 0.3.0
@@ -46,9 +53,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Added service and provider snippets
 
-<a name="0.0.3"></a>
+<a name="1.0.0"></a>
 
-## 0.0.3 (2018-01-06)
+## 1.0.0 (2018-08-08)
 
 - Added more mongoose snippets
 
