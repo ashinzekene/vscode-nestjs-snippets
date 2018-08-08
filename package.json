@@ -6,7 +6,7 @@
   "repository": "https://github.com/ashinzekene/vscode-nestsjs-snippets",
   "publisher": "ashinzekene",
   "galleryBanner": {
-    "color": "#FA1000",
+    "color": "#E5254E",
     "theme": "dark"
   },
   "scripts": {
