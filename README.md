@@ -19,24 +19,24 @@
 
 ## Usage
 Snippet                       |Prefix               | Purpose                                   |
-----------------------------------------| ------------------------------| --------------------------------------------------------------| 
-Nest Controller                         | n-controller                  | NestJS Controller                                             | 
-Nest v4 Middlware                       | n-v4-middleware               | NestJS Middleware Version 4                                   | 
-Nest v4 Module                          | n-v4-module                   | NestJS Module v4                                              | 
-Nest Root Module                        | n-module-root                 | NestJS Root Module                                            | 
-Nest NestModule                         | n-module-nest                 | NestJS Module Implementing NestModule                         | 
-Nest Mongoose Service                   | n-mongoose-service            | NestJS Service for Mongoose                                   | 
-Nest Mongoose Interface                 | n-mongoose-interface          | NestJS Interface for mongoose                                 | 
-Nest Unit Test                          | n-test                        | NestJS Unit Test                                              | 
-Nest Sequelize Entity                   | n-sequelize-entity            | NestJS Sequelize Entity                                       | 
-Nest Sequelize Provider                 | n-sequelize-provider          | NestJS Sequelize Provider                                     | 
-Nest Sequelize Database Provider        | n-sequelize-database-provider | NestJS Sequelize Provider                                     | 
-Nest Interceptor                        | n-interceptor                 | NestJS Interceptor                                            | 
-Nest Guard                              | n-guard                       | NestJS Guard                                                  | 
-Nest Provider                           | n-provider                    | NestJS Provider                                               | 
-Nest Module                             | n-module                      | NestJS Module                                                 | 
-Nest Global Module                      | n-module-global               | NestJS Global Module                                          | 
-Nest Middleware                         | n-middleware                  | NestJS Middleware                                             | 
+----------------------------------------| ------------------------------| --------------------------------------------------------------|
+Nest Controller                         | n-controller                  | NestJS Controller                                             |
+Nest v4 Middlware                       | n-v4-middleware               | NestJS Middleware Version 4                                   |
+Nest v4 Module                          | n-v4-module                   | NestJS Module v4                                              |
+Nest Root Module                        | n-module-root                 | NestJS Root Module                                            |
+Nest NestModule                         | n-module-nest                 | NestJS Module Implementing NestModule                         |
+Nest Mongoose Service                   | n-mongoose-service            | NestJS Service for Mongoose                                   |
+Nest Mongoose Interface                 | n-mongoose-interface          | NestJS Interface for mongoose                                 |
+Nest Unit Test                          | n-test                        | NestJS Unit Test                                              |
+Nest Sequelize Entity                   | n-sequelize-entity            | NestJS Sequelize Entity                                       |
+Nest Sequelize Provider                 | n-sequelize-provider          | NestJS Sequelize Provider                                     |
+Nest Sequelize Database Provider        | n-sequelize-database-provider | NestJS Sequelize Provider                                     |
+Nest Interceptor                        | n-interceptor                 | NestJS Interceptor                                            |
+Nest Guard                              | n-guard                       | NestJS Guard                                                  |
+Nest Provider                           | n-provider                    | NestJS Provider                                               |
+Nest Module                             | n-module                      | NestJS Module                                                 |
+Nest Global Module                      | n-module-global               | NestJS Global Module                                          |
+Nest Middleware                         | n-middleware                  | NestJS Middleware                                             |
 
 ## Installation
 
@@ -56,6 +56,10 @@ OR
 
 Contributions are highly welcome
 
+### Contributors list
+- @ashinzekene
+- @wbhob
+
 ## Release Notes
 
 ## 1.0.0
@@ -63,4 +67,3 @@ Contributions are highly welcome
 - New Naming convention
   - Thanks to @wbhob for the more efficient naming convention
 
- 
