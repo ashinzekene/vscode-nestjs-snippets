@@ -9,6 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 1.1.0 - 16-08-2018
 
 - added snippet for pipes
+- updated rxjs imports for interceptor snippet
 
 <a name="1.0.0"></a>
 
