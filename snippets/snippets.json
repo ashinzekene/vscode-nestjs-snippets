@@ -290,5 +290,19 @@
       "\t}",
       "}"
     ]
+  },
+  "Nest Pipe": {
+    "prefix": "n-pipe",
+    "description": "NestJS Pipe",
+    "body": [
+      "import { PipeTransform, Injectable, ArgumentMetadata } from '@nestjs/common';",
+      "",
+      "@Injectable()",
+      "export class ${1:Validation}Pipe implements PipeTransform {",
+      "  transform(value: any, metadata: ArgumentMetadata) {",
+      "    return ${0:value};",
+      "  }",
+      "}"
+    ]
   }
 }
