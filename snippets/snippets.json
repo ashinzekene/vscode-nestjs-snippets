@@ -203,12 +203,12 @@
     "prefix": "n-interceptor",
     "description": "NestJS Interceptor",
     "body": [
-      "import { Interceptor, NestInterceptor, ExecutionContext } from '@nestjs/common';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Injectable, NestInterceptor, ExecutionContext } from '@nestjs/common';",
+      "import { Observable } from 'rxjs';",
       "",
-      "@Interceptor()",
+      "@Injectable()",
       "export class ${1}Interceptor implements NestInterceptor {",
-      "\tintercept(dataOrRequest, context: ExecutionContext, stream$: Observable<any>): Observable<any> {",
+      "\tintercept(context: ExecutionContext, stream$: Observable<any>): Observable<any> {",
       "\t\t${0}",
       "\t}",
       "}"
@@ -219,7 +219,7 @@
     "description": "NestJS Guard",
     "body": [
       "import { Guard, CanActivate, ExecutionContext } from '@nestjs/common';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "import { Reflector } from '@nestjs/core';",
       "",
       "@Guard()",
