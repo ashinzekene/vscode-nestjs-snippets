@@ -37,6 +37,7 @@ Nest Provider                           | n-provider                    | NestJS
 Nest Module                             | n-module                      | NestJS Module                                                 | 
 Nest Global Module                      | n-module-global               | NestJS Global Module                                          | 
 Nest Middleware                         | n-middleware                  | NestJS Middleware                                             | 
+Nest Pipe                               | n-pipe                        | NestJS Pipe                                                   | 
 
 ## Installation
 
@@ -58,9 +59,7 @@ Contributions are highly welcome
 
 ## Release Notes
 
-## 1.0.0
+## 1.1.0 - 16-08-2018
 
-- New Naming convention
-  - Thanks to @wbhob for the more efficient naming convention
+- added snippet for pipes
 
- 

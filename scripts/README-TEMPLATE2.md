@@ -18,6 +18,7 @@ Contributions are highly welcome
 
 ## Release Notes
 
-## 0.3.0
+## 1.1.0 - 16-08-2018
 
-- Added snippets for v5!!!
+- added snippet for pipes
+
