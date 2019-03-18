@@ -305,20 +305,6 @@
       "}"
     ]
   },
-  "TypeORM config": {
-    "prefix": "n-typeorm-config",
-    "description": "TypORM config",
-    "body": [
-      "{",
-      "\"type\": \"mysql\",",
-      "\"host\": \"localhost\",",
-      "\"port\": 3306,",
-      "\"username\": \"test\",",
-      "\"password\": \"test\",",
-      "\"database\": \"test\"",
-      "}"
-    ]
-  },
   "Nest TypeORM Entity": {
     "prefix": "n-typeorm-entity",
     "description": "NestJS TypeORM Entity",
@@ -330,8 +316,8 @@
       "\t@PrimaryGeneratedColumn()",
       "\tid: number;",
       "",
-      "\t@Column",
-      "\t${0};",
+      "\t@Column()",
+      "\t${0}: string;",
       "}",
       ""
     ]
@@ -345,11 +331,11 @@
       "",
       "@EntityRepository(${1})",
       "export class ${1}Repository extends Repository<${1}> {",
-      "\tfindByName(firstName: string, lastName: string) {",
-      "\t\treturn this.findOne({ firstName, lastName });",
+      "\tfindByName(clientName: string) {",
+      "\t\treturn this.findOne({ where: {clientName} });",
       "\t}",
-      "",
-      "}"
+      "}",
+      ""
     ]
   }
 }
