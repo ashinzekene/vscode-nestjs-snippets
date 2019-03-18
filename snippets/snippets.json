@@ -304,5 +304,38 @@
       "  }",
       "}"
     ]
+  },
+  "Nest TypeORM Entity": {
+    "prefix": "n-typeorm-entity",
+    "description": "NestJS TypeORM Entity",
+    "body": [
+      "import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';",
+      "",
+      "@Entity()",
+      "export class ${1} {",
+      "\t@PrimaryGeneratedColumn()",
+      "\tid: number;",
+      "",
+      "\t@Column()",
+      "\t${0}: string;",
+      "}",
+      ""
+    ]
+  },
+  "Nest TypeORM Repository": {
+    "prefix": "n-typeorm-repository",
+    "description": "NestJS TypeORM Repository",
+    "body": [
+      "import { EntityRepository, Repository } from 'typeorm';",
+      "import { ${1} } from '../entity/${1}';",
+      "",
+      "@EntityRepository(${1})",
+      "export class ${1}Repository extends Repository<${1}> {",
+      "\tfindByName(clientName: string) {",
+      "\t\treturn this.findOne({ where: {clientName} });",
+      "\t}",
+      "}",
+      ""
+    ]
   }
 }
