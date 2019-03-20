@@ -4,6 +4,13 @@ All notable changes to the "nestjs" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+<a name="1.2.0"></a>
+
+## 1.2.0 - 20-03-2019
+
+- added snippet for typeorm
+Thanks to [@ahmedNY](https://github.com/ahmedNY)
+
 <a name="1.1.0"></a>
 
 ## 1.1.0 - 16-08-2018
