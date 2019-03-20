@@ -61,9 +61,9 @@ Contributions are highly welcome
 
 ## Release Notes
 
-## 1.1.0 - 16-08-2018
+## 1.2.0 - 20-03-2019
 
-- added snippet for pipes
-- updated rxjs imports for interceptor snippet
+- added snippet for typeorm
+Thanks to [@ahmedNY](https://github.com/ahmedNY)
 
  
