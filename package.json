@@ -2,7 +2,7 @@
   "name": "nestjs",
   "displayName": "Vscode NestJs Snippets",
   "description": "Code snippets for nestjs",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "repository": "https://github.com/ashinzekene/vscode-nestsjs-snippets",
   "publisher": "ashinzekene",
   "galleryBanner": {
