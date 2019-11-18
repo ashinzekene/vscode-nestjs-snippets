@@ -21,6 +21,7 @@
 Snippet                       |Prefix               | Purpose                                   |
 ----------------------------------------| ------------------------------| --------------------------------------------------------------| 
 Nest Controller                         | n-controller                  | NestJS Controller                                             | 
+Nest Service                            | n-service                     | NestJS Service                                                | 
 Nest v4 Middlware                       | n-v4-middleware               | NestJS Middleware Version 4                                   | 
 Nest v4 Module                          | n-v4-module                   | NestJS Module v4                                              | 
 Nest Root Module                        | n-module-root                 | NestJS Root Module                                            | 

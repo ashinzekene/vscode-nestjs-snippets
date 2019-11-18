@@ -15,6 +15,17 @@
       "}"
     ]
   },
+  "Nest Service": {
+    "prefix": "n-service",
+    "description": "NestJS Service",
+    "body": [
+      "import { Injectable } from '@nestjs/common';",
+      "",
+      "@Injectable()",
+      "export class ${1}Service {}",
+      ""
+    ]
+  },
   "Nest v4 Middlware": {
     "prefix": "n-v4-middleware",
     "description": "NestJS Middleware Version 4",
