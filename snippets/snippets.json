@@ -142,6 +142,30 @@
       "});"
     ]
   },
+   "Nest Service Unit Test": {
+    "prefix": "n-test-service",
+    "description": "NestJS Service Unit Test",
+    "body": [
+      "import { Test } from '@nestjs/testing';",
+      "import { ${1}Service } from './${2}.service';",
+      "",
+      "describe('${1} Test suite', () => {",
+      "\tlet ${2}Service: ${1}Service;",
+      "",
+      "\tbeforeEach(async () => {",
+      "\t\tconst module = await Test.createTestingModule({",
+      "\t\t\tproviders: [${1}Service],",
+      "\t\t}).compile();",
+      "",
+      "\t\t${2}Service = module.get<${1}Service>(${1}Service);",
+      "\t});",
+      "",
+      "\tit('should be defined', () => {",
+        "\t\texpect(${2}Service).toBeDefined();",
+      "\t});",
+      "});"
+    ]
+  },
   "Nest Sequelize Entity": {
     "prefix": "n-sequelize-entity",
     "description": "NestJS Sequelize Entity",

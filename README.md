@@ -28,6 +28,7 @@ Nest NestModule                         | n-module-nest                 | NestJS
 Nest Mongoose Service                   | n-mongoose-service            | NestJS Service for Mongoose                                   | 
 Nest Mongoose Interface                 | n-mongoose-interface          | NestJS Interface for mongoose                                 | 
 Nest Unit Test                          | n-test                        | NestJS Unit Test                                              | 
+Nest Service Unit Test                  | n-test-service                | NestJS Service Unit Test                                      | 
 Nest Sequelize Entity                   | n-sequelize-entity            | NestJS Sequelize Entity                                       | 
 Nest Sequelize Provider                 | n-sequelize-provider          | NestJS Sequelize Provider                                     | 
 Nest Sequelize Database Provider        | n-sequelize-database-provider | NestJS Sequelize Provider                                     | 
@@ -61,9 +62,6 @@ Contributions are highly welcome
 
 ## Release Notes
 
-## 1.2.0 - 20-03-2019
+## 1.1.0 - 16-08-2018
 
-- added snippet for typeorm
-Thanks to [@ahmedNY](https://github.com/ahmedNY)
-
- 
+- added snippet for pipes
