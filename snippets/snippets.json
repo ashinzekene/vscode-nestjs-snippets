@@ -142,9 +142,9 @@
       "});"
     ]
   },
-   "Nest-Service-Unit-Test": {
+   "Nest Service Unit Test": {
     "prefix": "n-test-service",
-    "description": "Nest Service Unit Test",
+    "description": "NestJS Service Unit Test",
     "body": [
       "import { Test } from '@nestjs/testing';",
       "import { ${1}Service } from './${2}.service';",
