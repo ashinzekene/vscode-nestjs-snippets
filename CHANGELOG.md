@@ -4,6 +4,13 @@ All notable changes to the "nestjs" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+<a name="1.3.0"></a>
+
+## 1.3.0 - 04-03-2020
+
+- added snippet for service unit test
+Thanks to [@lupu60](https://github.com/lupu60)
+
 <a name="1.2.0"></a>
 
 ## 1.2.0 - 20-03-2019

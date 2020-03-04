@@ -10,7 +10,8 @@
     "theme": "dark"
   },
   "scripts": {
-    "vscode:prepublish": "node scripts/readme-gen && node scripts/clog"
+    "generate": "node scripts/readme-gen && node scripts/clog",
+    "vscode:prepublish": "npm run generate"
   },
   "engines": {
     "vscode": "^1.17.0"

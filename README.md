@@ -62,6 +62,9 @@ Contributions are highly welcome
 
 ## Release Notes
 
-## 1.1.0 - 16-08-2018
+## 1.3.0 - 04-03-2020
 
-- added snippet for pipes
+- added snippet for service unit test
+Thanks to [@lupu60](https://github.com/lupu60)
+
+ 
