@@ -4,6 +4,13 @@ All notable changes to the "nestjs" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+<a name="1.4.1"></a>
+
+## 1.4.1 - 11-08-2020
+
+- fixed snippet for interceptor
+Thanks to [@Baoyx007](https://github.com/Baoyx007)
+
 <a name="1.3.0"></a>
 
 ## 1.3.0 - 04-03-2020
